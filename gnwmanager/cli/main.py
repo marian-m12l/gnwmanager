@@ -80,6 +80,7 @@ def run_app():
         "warning.cortex_m_default": False,
         "persist": True,
         "target_override": "STM32H7B0xx",
+        "jlink.device": "STM32H7B0VB",
     }
 
     # Manual command chaining; Typer/Clicks's builtin is kinda broken.

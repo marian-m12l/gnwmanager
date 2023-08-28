@@ -231,13 +231,6 @@ $(BUILD_DIR)/%.bin: $(BUILD_DIR)/%.elf | $(BUILD_DIR)
 $(BUILD_DIR):
 	@mkdir $@
 
-FORCE:
-
-Core/Inc/buildinfo.h: FORCE | $(BUILD_DIR)
-	$(V)./scripts/update_buildinfo.sh
-
-$(BUILD_DIR)/gnwmanager.o: Core/Inc/buildinfo.h
-
 
 
 OPENOCD ?= openocd
